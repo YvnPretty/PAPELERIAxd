@@ -78,7 +78,7 @@ Se cambia con proveedor.
 
 ## 4. Análisis del Funcionamiento y Reglas de Negocio
 
-De la cruce de la investigación y las entrevistas, se extrajeron exitosamente las reglas fundamentales de la lógica operativa del establecimiento:
+A partir del análisis conjunto entre la investigación previa y la entrevista en sitio, se identificaron las siguientes reglas fundamentales que rigen la operación diaria del negocio:
 
 1. **Atención al cliente y proceso de venta:** El trato es directo y rápido. Toda venta debe iniciar saludo, y finaliza con el cobro. No se documenta inventario durante la venta, el único dato que trasciende y se guarda es el **precio de la venta**.
 2. **Manejo Financiero y Descuentos:** Se aceptan múltiples métodos de pago. Las políticas de descuentos no se basan en volumen total o clientes frecuentes, sino estrictamente amarradas a promociones **por producto**.
