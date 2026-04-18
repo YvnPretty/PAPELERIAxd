@@ -1,3 +1,5 @@
+![Artículos de papelería](proveedora-de-papelerias-1.jpg.webp)
+
 La papelería es una pieza fundamental en cualquier entorno de oficina, hogar o escuela. Ya sea que usted sea propietario de un negocio, gerente de oficina o simplemente alguien que busca abastecer su espacio de trabajo, comprender qué implica una papelería y qué productos puede ofrecerle es esencial. En esta guía, le proporcionaremos toda la información necesaria sobre papelería y suministros de oficina para que tome decisiones informadas y eficientes.
 
 ¿Qué es una papelería?
