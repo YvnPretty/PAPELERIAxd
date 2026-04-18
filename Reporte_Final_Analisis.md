@@ -1,5 +1,8 @@
 <div align="center">
 
+![Tecnológico Nacional de México](tec.jpeg) 
+![Instituto Tecnológico de Milpa Alta II](tecnmmilpa.jpg)
+
 **Instituto Tecnológico de Milpa Alta II**
 
 **Materia:** Fundamentos de Ingeniería de Software  
