@@ -33,7 +33,7 @@ Las preguntas de la entrevista se diseñaron para mapear la rutina de trabajo en
 
 ## 3. Entrevista Realizada
 
-A continuación se presentan las respuestas recolectadas por medio del cuestionario de diagnóstico operativo:
+A continuación se presentan las preguntas, y las respuestas recolectadas por medio del cuestionario que el equipo elaboró:
 
 **¿Cómo se realiza una venta desde que llega el cliente hasta que paga?**
 Primero abordamos con un saludo y brindamos el servicio o producto que quiere el cliente. Y al finalizar su elección, procedemos al pago y ya.
