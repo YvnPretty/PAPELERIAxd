@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Reglas de Negocio - Papelería</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    line-height: 1.8;
+    color: #1a1a1a;
+    margin: 50px 70px;
+    max-width: 860px;
+  }
+  h1 {
+    font-size: 17pt;
+    color: #1a1a2e;
+    border-bottom: 2px solid #1a1a2e;
+    padding-bottom: 6px;
+    margin-top: 30px;
+  }
+  h2 {
+    font-size: 14pt;
+    color: #0f3460;
+    margin-top: 30px;
+  }
+  h3 {
+    font-size: 12pt;
+    color: #444;
+    margin-top: 22px;
+    font-style: italic;
+  }
+  hr { border: none; border-top: 1px solid #ccc; margin: 28px 0; }
+  p { margin: 10px 0; text-align: justify; }
+  ul { margin-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: #0055bb; }
+  [align="center"] { text-align: center; }
+  strong { color: #111; }
+</style>
+</head>
+<body>
+<div align="center">
+
+<p><img src="tecnmmilpa_medium.jpg" alt="Instituto Tecnológico de Milpa Alta II" style="max-width:180px;margin:6px auto;display:block;"></p>
+
+<p><strong>Instituto Tecnológico de Milpa Alta II</strong></p>
+
+<p><strong>Materia:</strong> Fundamentos de Ingeniería de Software  </p>
+<p><strong>Docente:</strong> Roldán Aquino Segura</p>
+
+<p><strong>Equipo: Ingeniebrios (Papelería)</strong>  </p>
+<p>Edgar Salazar López  </p>
+<p>César Meza Corella  </p>
+<p>Misael Silva Fragoso  </p>
+<p>Marco Antonio Aguilar Guerrero  </p>
+
+</div>
+
+<hr>
+
+<h1>Reglas de Negocio: Papelería Local</h1>
+
+<h2>Introducción</h2>
+
+<p>Cuando se habla de analizar un negocio para diseñar un sistema, lo primero que uno imagina es encontrar procesos bien definidos, con registros claros y procedimientos documentados. Sin embargo, al visitar la papelería y sentarse a conversar con su propietario, lo que encontramos fue algo completamente distinto: un negocio que funciona, que es rentable, y que lleva años operando, pero cuyas reglas no están escritas en ningún lado. Están en la cabeza del encargado, en su rutina diaria y en la experiencia acumulada de atender a cientos de clientes.</p>
+
+<p>Este escrito tiene como propósito plasmar, de forma ordenada y con nuestras propias palabras, todo lo que aprendimos a través de la investigación previa y la entrevista que realizamos directamente en el establecimiento. No es un resumen de lo que "debería" ser una papelería según los libros, sino una descripción honesta de cómo opera este negocio en particular, con todo lo que eso implica para quien quiera construir un sistema de apoyo para él.</p>
+
+<hr>
+
+<h2>Lo que encontramos en la entrevista</h2>
+
+<p>Antes de ir al negocio, investigamos de manera general cómo funcionan las papelerías: qué tipo de productos manejan, cómo suelen organizarse, qué servicios ofrecen. Eso nos dio una base para formular preguntas inteligentes. Pero fue al sentarnos frente al dueño cuando empezamos a entender la diferencia entre la teoría y la práctica.</p>
+
+<p>Las respuestas fueron cortas, directas, casi telegráficas. Y eso en sí mismo ya decía mucho. No había procedimientos elaborados que explicar. Las cosas simplemente se hacían de una manera que ya todos en el negocio conocían, sin necesidad de documentarlas.</p>
+
+<hr>
+
+<h2>Las reglas que rigen este negocio</h2>
+
+<h3>El proceso de venta es simple y no se registra casi nada</h3>
+
+<p>Lo primero que nos quedó claro es que aquí una venta tiene tres momentos: llega el cliente, el encargado lo atiende, y se cobra. Nada más. No hay un sistema donde se anote qué se vendió, cuántas piezas salieron o a qué hora ocurrió la transacción. El único dato que se guarda, si acaso, es el precio que se cobró.</p>
+
+<p>Esto puede parecer informal, pero tiene una lógica detrás: el negocio prioriza la velocidad. El propietario ya tuvo experiencia con un software de punto de venta en el pasado y lo abandonó precisamente porque le quitaba tiempo en lugar de ahorrárselo. Por eso, cualquier sistema que se proponga aquí debe respetar esa premisa: si complica la venta, no sirve.</p>
+
+<h3>Se aceptan varias formas de pago, pero los descuentos son por producto</h3>
+
+<p>El negocio no le cierra la puerta a ninguna forma de pago: efectivo, transferencia o tarjeta, todo se acepta. Eso facilita las cosas tanto para el cliente como para el negocio. Lo interesante es la política de descuentos: no se aplican por ser cliente frecuente ni por comprar en grandes cantidades. Si hay un descuento, es porque ese producto en particular tiene una promoción. Punto.</p>
+
+<p>Esto significa que un sistema de ventas no puede tener reglas automáticas de descuento basadas en perfiles de cliente; el control debe quedarse en manos del encargado, artículo por artículo.</p>
+
+<h3>El inventario vive en la memoria y en los ojos del encargado</h3>
+
+<p>Esta fue quizás la revelación más sorprendente de la visita. Cuando preguntamos cómo saben que un producto se está terminando, la respuesta fue: <em>"visualmente"</em>. Y lo mismo con las entradas de nueva mercancía. No hay conteos formales, no hay hojas de cálculo, no hay registros en papel. El encargado recorre el lugar con la vista y sabe, más o menos, con qué cuenta.</p>
+
+<p>Funciona porque la persona que lo hace conoce el negocio como la palma de su mano. Pero esa misma fortaleza se convierte en un riesgo enorme si esa persona falta, si el negocio crece o si hay un cambio de personal. Aquí hay una oportunidad real de mejora, siempre y cuando la solución que se proponga sea tan simple que no genere más trabajo del que ya existe.</p>
+
+<h3>Las devoluciones y los productos dañados se manejan diferente</h3>
+
+<p>Hay dos situaciones distintas que el negocio reconoce y trata de forma diferente. La primera es cuando un cliente quiere devolver algo que compró: se acepta sin problema, siempre que el producto esté en el mismo estado en que se entregó. La segunda es cuando un producto llega dañado desde el proveedor: en ese caso se negocia directamente el canje con el proveedor y el artículo dañado nunca llega a mostrarse al público.</p>
+
+<p>Esta distinción no estaba escrita en ningún cartel ni en ningún reglamento. Simplemente es la manera en que se hacen las cosas. Y al documentarla, nos dimos cuenta de que un sistema que no distinga entre estos dos eventos estaría mezclando situaciones que no deben mezclarse.</p>
+
+<h3>Las impresiones son el motor del negocio, y los trámites son el freno</h3>
+
+<p>Cuando preguntamos cuáles son los productos o servicios más vendidos, la respuesta fue clara: las impresiones. Documentos, fotografías, formularios... ese servicio mueve clientes de forma constante a lo largo del día. Es lo que más genera, lo que más se repite y lo que más identifica al negocio frente a su clientela habitual.</p>
+
+<p>En el otro extremo están los trámites escolares y los servicios de gobierno. Esos son los que más tiempo consumen, los que requieren más explicaciones, más revisiones y más paciencia. No generan tanto ingreso pero sí consumen mucho del tiempo del personal. Un sistema inteligente debería reconocer esta diferencia y apoyar la agilización del servicio que más flujo genera, sin descuidar el resto.</p>
+
+<h3>El celular es la herramienta que el negocio necesita</h3>
+
+<p>La última y quizás más importante de las reglas que identificamos no tiene que ver con ventas ni inventario, sino con la forma en que el propietario imagina su relación con la tecnología. Ya tuvo un sistema antes. No le gustó. Fue lento, complicado, y terminó siendo un obstáculo en lugar de una ayuda.</p>
+
+<p>Lo que sí quiere, si acaso se implementa algo nuevo, es que funcione en su teléfono. No descarta usarlo también en una computadora, pero la interfaz principal debe ser pensada para celular. Eso define no solo el diseño de cualquier sistema, sino también el nivel de complejidad que está dispuesto a tolerar: bajo, muy bajo, casi inexistente.</p>
+
+<hr>
+
+<h2>Conclusión</h2>
+
+<p>Llevar a cabo esta combinación de investigación previa y visita directa al negocio nos permitió ver algo que los manuales de ingeniería de software pocas veces muestran: que los negocios reales no siempre siguen los modelos que uno estudia, y que eso no está mal. La papelería opera bajo sus propias reglas, construidas a lo largo del tiempo, ajustadas a su contexto y a su clientela.</p>
+
+<p>Nuestro trabajo como futuros ingenieros de software no es imponer un modelo ideal sobre ese negocio, sino entender su lógica y proponer herramientas que encajen en ella. Las reglas que aquí se describen no son sugerencias: son el punto de partida obligatorio para cualquier diseño de sistema que pretenda ser útil en este contexto.</p>
+
+</body>
+</html>

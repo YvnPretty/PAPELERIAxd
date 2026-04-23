@@ -1,0 +1,284 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+<title>Diseño y Gestión - Papelería</title>
+<style>
+body{font-family:Arial,sans-serif;font-size:11pt;line-height:1.7;color:#1a1a1a;margin:45px 65px;max-width:880px;}
+h1{font-size:16pt;color:#1a1a2e;border-bottom:2px solid #1a1a2e;padding-bottom:5px;margin-top:28px;}
+h2{font-size:14pt;color:#0f3460;margin-top:26px;}
+h3{font-size:12pt;color:#333;margin-top:20px;}
+h4{font-size:11pt;color:#555;margin-top:16px;}
+hr{border:none;border-top:1px solid #ccc;margin:24px 0;}
+p{margin:8px 0;text-align:justify;}
+ul{margin-left:20px;}li{margin-bottom:5px;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:10pt;}
+td,th{border:1px solid #bbb;padding:6px 10px;}
+tr:first-child td{background:#f0f0f0;font-weight:bold;}
+a{color:#0055bb;}[align="center"]{text-align:center;}
+</style></head><body><div align="center">
+
+<p><img src="tecnmmilpa_medium.jpg" alt="Instituto Tecnológico de Milpa Alta II" style="max-width:260px;margin:12px auto;display:block;border:1px solid #ddd;border-radius:8px;"></p>
+
+<p><strong>Instituto Tecnológico de Milpa Alta II</strong></p>
+
+<p><strong>Materia:</strong> Fundamentos de Ingeniería de Software  </p>
+<p><strong>Docente:</strong> Roldán Aquino Segura</p>
+
+<p><strong>Equipo: Ingeniebrios (Papelería)</strong>  </p>
+<p>Edgar Salazar López  </p>
+<p>César Meza Corella  </p>
+<p>Misael Silva Fragoso  </p>
+<p>Marco Antonio Aguilar Guerrero  </p>
+
+</div>
+
+<hr>
+
+<h1>Diseño de la Solución y Gestión del Proyecto</h1>
+
+<hr>
+
+<h2>1. Diseño de la Solución</h2>
+
+<h3>1.1 Herramienta utilizada para los mockups</h3>
+
+<p>Para la elaboración de los mockups se utilizó <strong>Figma</strong>, una herramienta de diseño de interfaces basada en navegador que permite crear prototipos de alta y baja fidelidad de forma colaborativa. Se eligió Figma porque el equipo ya tenía experiencia básica con ella y porque permite exportar las pantallas en formatos de imagen de calidad para incluirlas en la documentación. Otra razón de peso fue que Figma tiene una versión gratuita que cubre perfectamente las necesidades de este proyecto.</p>
+
+<p>El proceso de elaboración consistió en:</p>
+
+<p>1. Primero definimos en papel (a modo de boceto rápido) cuáles serían las pantallas más importantes del sistema, considerando las reglas de negocio que identificamos en la etapa anterior.</p>
+<p>2. Con esos bocetos como referencia, abrimos un proyecto nuevo en Figma y configuramos el tamaño del frame en formato de celular (375 x 812 px, equivalente a un iPhone estándar).</p>
+<p>3. Construimos cada pantalla usando componentes básicos: rectangulos, texto, íconos y colores. Mantuvimos un diseño minimalista para que el propietario de la papelería pueda usar el sistema sin confusión.</p>
+<p>4. Revisamos cada pantalla preguntándonos si el flujo tenía sentido para alguien que nunca ha usado un sistema de punto de venta digital.</p>
+
+<hr>
+
+<h3>1.2 Mockups de la solución</h3>
+
+<p>A continuación se presentan las tres pantallas principales del sistema propuesto. El diseño es mobile-first porque, como se obtiene de las reglas de negocio, el propietario quiere operar el sistema desde su teléfono celular.</p>
+
+<h4>Pantalla 1: Inicio y ventas recientes</h4>
+
+<p>Esta es la pantalla de inicio de la aplicación. Muestra el historial de ventas del día con producto, cantidad y precio. El botón principal "Nueva Venta" es visible y accesible desde cualquier punto de la pantalla. La barra de navegación inferior permite moverse entre las tres secciones: Ventas, Inventario y Reportes.</p>
+
+<p><img src="mockup_ventas.png" alt="Mockup pantalla de ventas" style="max-width:260px;margin:12px auto;display:block;border:1px solid #ddd;border-radius:8px;"></p>
+
+<hr>
+
+<h4>Pantalla 2: Inventario de productos</h4>
+
+<p>Esta pantalla muestra todos los productos dados de alta en el sistema. Cada tarjeta incluye el nombre del producto, su categoría (Escolar, Oficina o Técnica) y la cantidad disponible. Cuando el stock baja de cierto umbral, el número se muestra en rojo con la etiqueta "Stock Bajo" para que el encargado lo detecte visualmente de un vistazo, que es exactamente cómo ya lo hace hoy. El botón flotante permite agregar nuevos productos.</p>
+
+<p><img src="mockup_inventario.png" alt="Mockup pantalla de inventario" style="max-width:260px;margin:12px auto;display:block;border:1px solid #ddd;border-radius:8px;"></p>
+
+<hr>
+
+<h4>Pantalla 3: Registro de nueva venta</h4>
+
+<p>Esta es la pantalla más importante del sistema. Se diseñó para ser lo más ágil posible: el encargado busca el producto, ajusta la cantidad con botones de más y menos, elige el método de pago (Efectivo, Transferencia o Tarjeta), aplica descuento si hay alguna promoción vigente, y confirma la venta. El total se calcula automáticamente. Todo en una sola pantalla, sin pasos intermedios.</p>
+
+<p><img src="mockup_nueva_venta.png" alt="Mockup pantalla nueva venta" style="max-width:260px;margin:12px auto;display:block;border:1px solid #ddd;border-radius:8px;"></p>
+
+<hr>
+
+<h3>1.3 Casos de Uso</h3>
+
+<p>La herramienta utilizada para los diagramas de casos de uso fue <strong>draw.io</strong> (también conocido como diagrams.net), una aplicación web gratuita que permite crear diagramas UML de forma sencilla. Se eligió porque no requiere instalación y permite exportar los diagramas como imagen o PDF.</p>
+
+<p>El proceso fue el siguiente: primero listamos todos los actores que interactúan con el sistema (el encargado/propietario y el sistema mismo), luego identificamos cada acción que el usuario puede realizar, y finalmente los organizamos dentro del diagrama agrupando por módulo.</p>
+
+<p>A continuación se describen los casos de uso principales del sistema:</p>
+
+<hr>
+
+<p><strong>CU-01: Registrar venta</strong></p>
+
+<ul>
+<li><strong>Actor:</strong> Encargado / Propietario</li>
+<li><strong>Descripción:</strong> El encargado selecciona uno o más productos, define cantidades, elige el método de pago y confirma la transacción. El sistema guarda el registro con fecha, monto total y método de pago.</li>
+<li><strong>Precondición:</strong> El encargado debe estar en la pantalla de inicio.</li>
+<li><strong>Flujo principal:</strong></li>
+</ul>
+<p>  1. El encargado presiona "Nueva Venta".</p>
+<p>  2. Busca el producto en la barra de búsqueda o lo selecciona de la lista.</p>
+<p>  3. Ajusta la cantidad con los botones +/-.</p>
+<p>  4. Selecciona el método de pago.</p>
+<p>  5. Si aplica, ingresa el descuento del producto.</p>
+<p>  6. Confirma la venta.</p>
+<p>  7. El sistema registra la transacción y regresa a la pantalla de inicio.</p>
+<ul>
+<li><strong>Flujo alternativo:</strong> Si el producto no existe en el sistema, el encargado puede agregarlo antes de continuar.</li>
+</ul>
+
+<hr>
+
+<p><strong>CU-02: Consultar inventario</strong></p>
+
+<ul>
+<li><strong>Actor:</strong> Encargado / Propietario</li>
+<li><strong>Descripción:</strong> El encargado accede a la lista completa de productos registrados, con sus existencias actuales y categorizados.</li>
+<li><strong>Precondición:</strong> Debe existir al menos un producto registrado.</li>
+<li><strong>Flujo principal:</strong></li>
+</ul>
+<p>  1. El encargado toca el ícono de Inventario en la barra inferior.</p>
+<p>  2. El sistema muestra la lista de productos con nombre, categoría y cantidad.</p>
+<p>  3. Los productos con stock bajo se resaltan visualmente en rojo.</p>
+<p>  4. El encargado puede buscar un producto específico con la barra de búsqueda.</p>
+
+<hr>
+
+<p><strong>CU-03: Agregar producto al inventario</strong></p>
+
+<ul>
+<li><strong>Actor:</strong> Encargado / Propietario</li>
+<li><strong>Descripción:</strong> El encargado registra un nuevo producto en el sistema con su nombre, categoría, precio y cantidad inicial.</li>
+<li><strong>Flujo principal:</strong></li>
+</ul>
+<p>  1. Desde la pantalla de inventario, presiona el botón flotante +.</p>
+<p>  2. Ingresa el nombre del producto, categoría, precio unitario y cantidad inicial.</p>
+<p>  3. Guarda el producto.</p>
+<p>  4. El sistema lo agrega a la lista de inventario.</p>
+
+<hr>
+
+<p><strong>CU-04: Registrar devolución</strong></p>
+
+<ul>
+<li><strong>Actor:</strong> Encargado / Propietario</li>
+<li><strong>Descripción:</strong> Cuando un cliente quiere devolver un artículo, el encargado busca la venta original, verifica que el producto esté en buen estado y procesa la devolución. El sistema actualiza el inventario.</li>
+<li><strong>Flujo principal:</strong></li>
+</ul>
+<p>  1. El encargado accede al historial de ventas.</p>
+<p>  2. Localiza la venta correspondiente.</p>
+<p>  3. Selecciona el producto a devolver y confirma.</p>
+<p>  4. El sistema revierte el monto y suma la unidad de vuelta al inventario.</p>
+
+<hr>
+
+<p><strong>CU-05: Ver reportes de ventas</strong></p>
+
+<ul>
+<li><strong>Actor:</strong> Encargado / Propietario</li>
+<li><strong>Descripción:</strong> El encargado consulta un resumen de las ventas realizadas en un periodo determinado (día, semana o mes), incluyendo el total recaudado y los productos más vendidos.</li>
+<li><strong>Flujo principal:</strong></li>
+</ul>
+<p>  1. El encargado accede a la sección "Reportes".</p>
+<p>  2. Selecciona el periodo de consulta.</p>
+<p>  3. El sistema muestra el total de ventas, el desglose por método de pago y los productos con mayor movimiento.</p>
+
+<hr>
+
+<h2>2. Planificación del Proyecto</h2>
+
+<h3>2.1 Cronograma de actividades</h3>
+
+<p>El proyecto se divide en cuatro etapas principales. Los tiempos están estimados en semanas de trabajo del equipo.</p>
+
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse;width:100%;font-size:10pt;">
+<tr><td>#</td><td>Etapa</td><td>Actividades principales</td><td>Duración estimada</td></tr>
+</table>
+<p>|---|-------|------------------------|------------------|</p>
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse;width:100%;font-size:10pt;">
+<tr><td>1</td><td>Análisis y requerimientos</td><td>Investigación, entrevista, identificación de reglas de negocio</td><td>1 semana</td></tr>
+<tr><td>2</td><td>Diseño de la solución</td><td>Mockups, diagramas de casos de uso, arquitectura del sistema</td><td>1 semana</td></tr>
+<tr><td>3</td><td>Desarrollo</td><td>Implementación del frontend móvil y lógica de negocio</td><td>3 semanas</td></tr>
+<tr><td>4</td><td>Pruebas y entrega</td><td>Pruebas funcionales, correcciones, documentación final y subida al repositorio</td><td>1 semana</td></tr>
+</table>
+
+<p><strong>Total estimado: 6 semanas</strong></p>
+
+<p>El equipo trabajará de forma paralela en las actividades de diseño y preparación del entorno durante la etapa 2, para que al iniciar el desarrollo ya esté todo listo.</p>
+
+<hr>
+
+<h3>2.2 Lista de tareas (estilo Trello / Jira)</h3>
+
+<p>A continuación se presenta el listado completo de actividades organizadas por etapa, con su estimación de tiempo individual:</p>
+
+<hr>
+
+<p><strong>ETAPA 1 – Análisis</strong></p>
+
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse;width:100%;font-size:10pt;">
+<tr><td>ID</td><td>Tarea</td><td>Responsable</td><td>Tiempo estimado</td></tr>
+</table>
+<p>|----|-------|-------------|----------------|</p>
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse;width:100%;font-size:10pt;">
+<tr><td>T-01</td><td>Investigación sobre papelerías y negocios similares</td><td>Equipo</td><td>4 horas</td></tr>
+<tr><td>T-02</td><td>Diseño del cuestionario de entrevista</td><td>Edgar, César</td><td>2 horas</td></tr>
+<tr><td>T-03</td><td>Realizar la entrevista al propietario</td><td>Equipo</td><td>1 hora</td></tr>
+<tr><td>T-04</td><td>Transcripción y análisis de respuestas</td><td>Misael, Marco</td><td>3 horas</td></tr>
+<tr><td>T-05</td><td>Redacción del documento de reglas de negocio</td><td>Edgar</td><td>3 horas</td></tr>
+</table>
+
+<hr>
+
+<p><strong>ETAPA 2 – Diseño</strong></p>
+
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse;width:100%;font-size:10pt;">
+<tr><td>ID</td><td>Tarea</td><td>Responsable</td><td>Tiempo estimado</td></tr>
+</table>
+<p>|----|-------|-------------|----------------|</p>
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse;width:100%;font-size:10pt;">
+<tr><td>T-06</td><td>Bocetos en papel de las pantallas principales</td><td>Equipo</td><td>2 horas</td></tr>
+<tr><td>T-07</td><td>Creación de mockups en Figma</td><td>César, Marco</td><td>5 horas</td></tr>
+<tr><td>T-08</td><td>Elaboración de diagramas de casos de uso en draw.io</td><td>Misael</td><td>4 horas</td></tr>
+<tr><td>T-09</td><td>Revisión y ajuste de mockups con base en retroalimentación</td><td>César</td><td>2 horas</td></tr>
+<tr><td>T-10</td><td>Redacción del documento de diseño y gestión</td><td>Edgar</td><td>3 horas</td></tr>
+</table>
+
+<hr>
+
+<p><strong>ETAPA 3 – Desarrollo</strong></p>
+
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse;width:100%;font-size:10pt;">
+<tr><td>ID</td><td>Tarea</td><td>Responsable</td><td>Tiempo estimado</td></tr>
+</table>
+<p>|----|-------|-------------|----------------|</p>
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse;width:100%;font-size:10pt;">
+<tr><td>T-11</td><td>Configuración del entorno de desarrollo</td><td>Marco</td><td>3 horas</td></tr>
+<tr><td>T-12</td><td>Implementación de pantalla de inicio y lista de ventas</td><td>César</td><td>6 horas</td></tr>
+<tr><td>T-13</td><td>Implementación del módulo de registro de ventas</td><td>Edgar</td><td>8 horas</td></tr>
+<tr><td>T-14</td><td>Implementación del módulo de inventario</td><td>Misael</td><td>8 horas</td></tr>
+<tr><td>T-15</td><td>Implementación del módulo de devoluciones</td><td>Edgar</td><td>5 horas</td></tr>
+<tr><td>T-16</td><td>Implementación de reportes de ventas</td><td>Marco</td><td>6 horas</td></tr>
+<tr><td>T-17</td><td>Integración y pruebas internas de cada módulo</td><td>Equipo</td><td>4 horas</td></tr>
+</table>
+
+<hr>
+
+<p><strong>ETAPA 4 – Pruebas y entrega</strong></p>
+
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse;width:100%;font-size:10pt;">
+<tr><td>ID</td><td>Tarea</td><td>Responsable</td><td>Tiempo estimado</td></tr>
+</table>
+<p>|----|-------|-------------|----------------|</p>
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse;width:100%;font-size:10pt;">
+<tr><td>T-18</td><td>Pruebas funcionales de todos los flujos</td><td>Equipo</td><td>4 horas</td></tr>
+<tr><td>T-19</td><td>Corrección de errores encontrados en pruebas</td><td>Equipo</td><td>3 horas</td></tr>
+<tr><td>T-20</td><td>Organización del repositorio de GitHub</td><td>Marco</td><td>2 horas</td></tr>
+<tr><td>T-21</td><td>Redacción del documento final en PDF</td><td>Edgar, César</td><td>3 horas</td></tr>
+<tr><td>T-22</td><td>Subida de toda la documentación al repositorio</td><td>Marco</td><td>1 hora</td></tr>
+</table>
+
+<hr>
+
+<h2>3. Estructura del Repositorio</h2>
+
+<p>El repositorio del proyecto está disponible en GitHub bajo el nombre del equipo. Los archivos están organizados de la siguiente manera:</p>
+
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse;width:100%;font-size:10pt;">
+<tr><td>Archivo</td><td>Descripción</td></tr>
+</table>
+<p>|---------|-------------|</p>
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse;width:100%;font-size:10pt;">
+<tr><td><code>Reporte_Final_Analisis.md</code> / <code>.pdf</code></td><td>Documento con la investigación previa, metodología, entrevista realizada y análisis de las reglas de negocio.</td></tr>
+<tr><td><code>Reglas_de_Negocio.md</code> / <code>.pdf</code></td><td>Escrito independiente con la descripción detallada de las reglas de negocio obtenidas en la entrevista.</td></tr>
+<tr><td><code>Diseno_y_Gestion.md</code> / <code>.pdf</code></td><td>Este documento. Contiene los mockups, casos de uso, cronograma y lista de tareas del proyecto.</td></tr>
+<tr><td><code>mockup_ventas.png</code></td><td>Imagen del mockup de la pantalla principal de ventas.</td></tr>
+<tr><td><code>mockup_inventario.png</code></td><td>Imagen del mockup de la pantalla de inventario de productos.</td></tr>
+<tr><td><code>mockup_nueva_venta.png</code></td><td>Imagen del mockup de la pantalla de registro de nueva venta.</td></tr>
+<tr><td><code>tecnmmilpa_medium.jpg</code></td><td>Logotipo del Instituto Tecnológico de Milpa Alta II.</td></tr>
+<tr><td><code>proveedora-de-papelerias-1.jpg.webp</code></td><td>Imagen ilustrativa de una papelería, usada en el reporte de análisis.</td></tr>
+<tr><td><code>generar_pdf.py</code></td><td>Script de Python para convertir los documentos Markdown a PDF usando LibreOffice.</td></tr>
+</table>
+
+</body></html>
