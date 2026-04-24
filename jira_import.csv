@@ -1,0 +1,15 @@
+Issue Type,Summary,Description,Start Date,Due Date,Status
+Epic,Análisis de Negocio Papelería,Documentación y reglas de negocio del sistema de papelería.,23/Apr/26,25/Apr/26,Done
+Task,Investigación Previa,Análisis detallado del funcionamiento del negocio y actores.,23/Apr/26,23/Apr/26,Done
+Task,Reglas de Negocio,Definición de políticas y restricciones operativas.,23/Apr/26,23/Apr/26,Done
+Epic,Módulo de Ventas y POS,Desarrollo de la interfaz de registro de transacciones y tickets.,26/Apr/26,05/May/26,To Do
+Story,Registro de Transacciones,Implementación del escaneo de productos y suma de servicios.,26/Apr/26,28/Apr/26,To Do
+Story,Emisión de Tickets,Generación automática de comprobantes de venta.,29/Apr/26,30/Apr/26,To Do
+Epic,Módulo de Inventario,Administración de stock y alertas de reabastecimiento.,06/May/26,15/May/26,To Do
+Story,Control de Existencias,Registro de entradas y mermas de mercancía.,06/May/26,10/May/26,To Do
+Story,Alertas de Stock Mínimo,Sistema de notificaciones visuales para reabastecimiento.,11/May/26,15/May/26,To Do
+Epic,Módulo Fiscal y Facturación,Integración con PAC para timbrado de CFDI 4.0.,16/May/26,25/May/26,To Do
+Story,Generación de CFDI,Captura de datos fiscales y emisión de facturas individuales.,16/May/26,20/May/26,To Do
+Story,Factura Global,Generación de factura diaria por ventas al público en general.,21/May/26,25/May/26,To Do
+Epic,Módulo de Reportes,Análisis de ventas y ganancias diarias.,26/May/26,02/Jun/26,To Do
+Story,Reporte de Ventas Diarias,Visualización de transacciones por empleado y turno.,26/May/26,30/May/26,To Do
